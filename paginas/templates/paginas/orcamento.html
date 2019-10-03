@@ -1,0 +1,16 @@
+{% extends "./base.html" %} {% block conteudo %}
+<h1 class="ui header">Orçamentos</h1>
+{% for orcamento in object_list %}
+<div class="ui relaxed divided list">
+  <div class="item">
+    <i class="large cart plus middle aligned icon"></i>
+    <div class="content">
+      <a href="{% url 'orcamento_detail' orcamento.pk %}" class="header">
+        {{ orcamento.data }}
+      </a>
+      <div class="description">{{ orcamento.valor_total }}</div>
+    </div>
+  </div>
+</div>
+
+{% endfor %} {%endblock conteudo %}

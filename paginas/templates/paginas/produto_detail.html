@@ -1,0 +1,9 @@
+{% extends "./base.html" %} {% block conteudo %}
+<h1 class="ui header">Produto Detail</h1>
+
+<div>
+  <h2>{{ produto.codigo }}</h2>
+  <h3>{{ produto.nome }}</h3>
+  <p>{{ produto.preco }}</p>
+</div>
+{%endblock conteudo %}

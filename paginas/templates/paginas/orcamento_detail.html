@@ -1,0 +1,10 @@
+{% extends "./base.html" %} {% block conteudo %}
+<h1 class="ui header">Orcamento Detail</h1>
+
+<div>
+  <h2>{{ orcamento.cod_orcamento }}</h2>
+  <h3>{{ orcamento.data }}</h3>
+  <p>{{ orcamento.status }}</p>
+  <p>{{ orcamento.valor_total }}</p>
+</div>
+{%endblock conteudo %}
